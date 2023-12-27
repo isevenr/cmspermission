@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../lib/internal/Magento/Framework/ObjectManager/etc/config.xsd">
+    <type name="Magento\Framework\EntityManager\Operation\ExtensionPool">
+        <arguments>
+            <argument name="extensionActions" xsi:type="array">
+                <item name="Magento\Cms\Api\Data\BlockInterface" xsi:type="array">
+                    <item name="read" xsi:type="array">
+                        <item name="customergroupReader" xsi:type="string">Isevenr\CmsPermission\Model\ResourceModel\Block\Relation\CustomerGroup\ReadHandler</item>
+                    </item>
+                    <item name="create" xsi:type="array">
+                        <item name="customergroupCreator" xsi:type="string">Isevenr\CmsPermission\Model\ResourceModel\Block\Relation\CustomerGroup\SaveHandler</item>
+                    </item>
+                    <item name="update" xsi:type="array">
+                        <item name="customergroupUpdater" xsi:type="string">Isevenr\CmsPermission\Model\ResourceModel\Block\Relation\CustomerGroup\SaveHandler</item>
+                    </item>
+                </item>
+            </argument>
+        </arguments>
+    </type>
+</config>

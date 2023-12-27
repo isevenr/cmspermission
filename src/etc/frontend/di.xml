@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../lib/internal/Magento/Framework/ObjectManager/etc/config.xsd">
+    <type name="Magento\Cms\Model\Block">
+        <plugin name="cmsblock_check_customer_group" type="Isevenr\CmsPermission\Plugin\Cms\Model\Block" />
+    </type>
+    <type name="Magento\Customer\CustomerData\SectionPoolInterface">
+        <arguments>
+            <argument name="sectionSourceMap" xsi:type="array">
+                <item name="cms-block-permissions" xsi:type="string">Isevenr\CmsPermission\CustomerData\CmsPermissionPermission</item>
+            </argument>
+        </arguments>
+    </type>
+</config>

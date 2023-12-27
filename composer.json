@@ -1,0 +1,26 @@
+{
+    "name": "isevenr/cmspermission",
+    "description": "Display CMS pages / blocks based on customer group",
+    "type": "magento2-module",
+    "version": "1.0.0",
+    "license": [
+        "GPL-3.0"
+    ],
+    "authors": [
+        {
+            "email": "nd.thanh@outlook.com",
+            "name": "Thanh, Nguyen Duy"
+        }
+    ],
+    "require": {
+        "php": "^7.3.0|^7.4.0|^8.0.0|^8.1.0|^8.2.0"
+    },
+    "autoload": {
+        "files": [
+            "src/registration.php"
+        ],
+        "psr-4": {
+            "Isevenr\\CmsPermission\\": "src/"
+        }
+    }
+}
